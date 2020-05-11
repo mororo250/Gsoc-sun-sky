@@ -2,17 +2,9 @@
 
 ## Week 1 (May 05 - 10):
   - [ ] Do any necessary work on [https://github.com/appleseedhq/appleseed/pull/2811](https://github.com/appleseedhq/appleseed/pull/2811).
-  - [ ] Investigate and start to implement Solar disk.
-
-<details><summary>Daily Task</summary>
-<p>
-
-  ##### May 5:
-  - [x] work on gsoc journal page.
-  - [ ] Compare results of [https://github.com/appleseedhq/appleseed/pull/2811](https://github.com/appleseedhq/appleseed/pull/2811) with other renderer engines.
-  
-</p>
-</details>
+  - [x] Compare results of [https://github.com/appleseedhq/appleseed/pull/2811](https://github.com/appleseedhq/appleseed/pull/2811) with other renderer engines.
+  - [x] Investigate Hosek and Wilkie Solar disk implementin.
+  - [x] Investigate Other Renderers solar disk implementin.
 
 ## Week 2 (May 11 - 17):
   - [ ] Finish Solar disk implementation from [Hosek's paper](https://www.researchgate.net/publication/262149273_Adding_a_Solar-Radiance_Function_to_the_Hosek-Wilkie_Skylight_Model)
