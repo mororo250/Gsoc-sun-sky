@@ -31,7 +31,7 @@ A List of relevant/intersting paper to this projects:
 - [Lintu, Andrei et al. “Realistic Solar Disc Rendering.” WSCG (2005)](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://otik.uk.zcu.cz/bitstream/11025/10955/1/Lintu.pdf).
  
 
-###### Comparing skydome models
+##### Comparing skydome models
 
 - [Kider, Jr & Knowlton, Daniel & Newlin, Jeremy & Li, Yining & Greenberg, Donald. (2014). A Framework for the Experimental Comparison of Solar and Skydome Illumination. ACM Transactions on Graphics. 33. 1-12. 10.1145/2661229.2661259.](https://dl.acm.org/doi/abs/10.1145/2661229.2661259) 
 
