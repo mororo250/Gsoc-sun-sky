@@ -42,3 +42,10 @@ A List of relevant/intersting paper to this projects:
 - [Wilkie, Alexander & Hošek, Lukas. (2013). Predicting Sky Dome Appearance on Earth-like Extrasolar Worlds. Proceedings - SCCG 2013: 29th Spring Conference on Computer Graphics.](https://cgg.mff.cuni.cz/projects/SkylightModelling/)
 
 - [Physically Based Sky, Atmosphereand Cloud Rendering in FrostbiteS ́ebastien HillaireEA Frostbite](https://media.contentapi.ea.com/content/dam/eacom/frostbite/files/s2016-pbs-frostbite-sky-clouds-new.pdf)
+
+
+##### Some other interesting papers
+
+[Serón, Francisco J. et al. “Implementation of a method of curved ray tracing for inhomogeneous atmospheres.” Comput. Graph. 29 (2005): 95-108.](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub)
+[Sadeghi, Iman & Muñoz, Adolfo & Laven, Philip & Jarosz, Wojciech & Serón, Francisco & Gutiérrez, Diego & Jensen, Henrik. (2012). Physically-Based Simulation of Rainbows. ACM Transactions on Graphics - TOG. 31. 1-12. 10.1145/2077341.2077344.](http://graphics.ucsd.edu/~henrik/papers/physically_based_simulation_of_rainbows.pdf)
+
