@@ -22,7 +22,7 @@ A List of relevant/intersting paper to this projects:
 
 - [Jensen, Henrik Wann et al. “A physically-based night sky model.” SIGGRAPH ‘01 (2001).](https://graphics.stanford.edu/~henrik/papers/nightsky/nightsky.pdf)
 
-- [Elek, Oskar & Kmoch, Petr. (2010). Real-time Spectral Scattering in Large-scale Natural Participating Media. Proceedings - SCCG 2010: 26th Spring Conference on Computer Graphics. 77-84. 10.1145/1925059.1925074. ][https://cgg.mff.cuni.cz/~oskar/projects/SCCG2010/Elek2010.pdf)
+- [Elek, Oskar & Kmoch, Petr. (2010). Real-time Spectral Scattering in Large-scale Natural Participating Media. Proceedings - SCCG 2010: 26th Spring Conference on Computer Graphics. 77-84. 10.1145/1925059.1925074. ](https://cgg.mff.cuni.cz/~oskar/projects/SCCG2010/Elek2010.pdf)
 
 ##### Sun disc
 
