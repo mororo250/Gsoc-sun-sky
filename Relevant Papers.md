@@ -46,6 +46,7 @@ A List of relevant/intersting paper to this projects:
 
 ##### Some other interesting papers
 
-[Serón, Francisco J. et al. “Implementation of a method of curved ray tracing for inhomogeneous atmospheres.” Comput. Graph. 29 (2005): 95-108.](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub)
-[Sadeghi, Iman & Muñoz, Adolfo & Laven, Philip & Jarosz, Wojciech & Serón, Francisco & Gutiérrez, Diego & Jensen, Henrik. (2012). Physically-Based Simulation of Rainbows. ACM Transactions on Graphics - TOG. 31. 1-12. 10.1145/2077341.2077344.](http://graphics.ucsd.edu/~henrik/papers/physically_based_simulation_of_rainbows.pdf)
+- [Serón, Francisco J. et al. “Implementation of a method of curved ray tracing for inhomogeneous atmospheres.” Comput. Graph. 29 (2005): 95-108.](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub)
+
+- [Sadeghi, Iman & Muñoz, Adolfo & Laven, Philip & Jarosz, Wojciech & Serón, Francisco & Gutiérrez, Diego & Jensen, Henrik. (2012). Physically-Based Simulation of Rainbows. ACM Transactions on Graphics - TOG. 31. 1-12. 10.1145/2077341.2077344.](http://graphics.ucsd.edu/~henrik/papers/physically_based_simulation_of_rainbows.pdf)
 
