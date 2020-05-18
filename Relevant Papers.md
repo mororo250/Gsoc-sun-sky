@@ -37,6 +37,8 @@ A List of relevant/intersting paper to this projects:
 
 - [Bruneton, Eric. (2016). A Qualitative and Quantitative Evaluation of 8 Clear Sky Models. IEEE Transactions on Visualization and Computer Graphics. PP. 1-1. 10.1109/TVCG.2016.2622272. ](https://arxiv.org/pdf/1612.04336.pdf)
 
+- [Analytical sky simulation](http://timothykol.com/pub/sky.pdf)
+
 
 ##### Others
 - [Wilkie, Alexander & Hošek, Lukas. (2013). Predicting Sky Dome Appearance on Earth-like Extrasolar Worlds. Proceedings - SCCG 2013: 29th Spring Conference on Computer Graphics.](https://cgg.mff.cuni.cz/projects/SkylightModelling/)
