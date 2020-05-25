@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Revisiting Physical Sun and Sky Model
 
 
