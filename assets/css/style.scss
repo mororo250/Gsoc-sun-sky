@@ -1,0 +1,29 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+
+/* ========================================================================
+ * Image comparator.
+ * ======================================================================== */
+ 
+.popup
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    text-align: left;
+}
+.window
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    background-color: #282828;
+    border: 1px solid #222;
+}
