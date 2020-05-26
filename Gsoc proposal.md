@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: minimal
 ---
 
 # Revisiting Physical Sun and Sky Model
