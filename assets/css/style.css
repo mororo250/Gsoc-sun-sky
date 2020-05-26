@@ -1,73 +1,163 @@
 /* ========================================================================
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ * Our tweaks:
+ *  - Removed <ul> and <ol> list style resets.
+ * ======================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+{
+    display: block;
+}
+body
+{
+    line-height: 1;
+}
+blockquote, q
+{
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after
+{
+    content: '';
+    content: none;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ========================================================================
+ * Common styles.
+ * ======================================================================== */
+body
+{
+    background-color: #282828;
+    color: #ccc;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+}
+h1
+{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+            
+h2
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+a
+{
+    color: #da854c;
+}
+pre
+{
+    font-family: "Inconsolata", monospace;
+}
+table
+{
+    margin-bottom: 20px;
+}
+td, th
+{
+    border: solid 1px #2f2f2f;
+    padding: 10px;
+}
+td
+{
+    background-color: #444;
+}
+th, tfoot td
+{
+    background-color: #383838;
+    font-size: 18px;
+}
+/* ========================================================================
  * Rendering results.
  * ======================================================================== */
-
 .result
 {
     background-color: #2f2f2f;
     margin-bottom: 60px;
 }
-
 .result td
 {
     background-color: inherit;
 }
-
 .result .title
 {
     font-size: 18px;
     font-weight: bold;
     padding-bottom: 20px;
 }
-
 .result .legend
 {
     margin-bottom: 10px;
     color: #777;
     font-style: italic;
 }
-
 .result .reference,
 .result .output
 {
     width: 510px;
 }
-
 .result .reference img,
 .result .output img
 {
     max-width: 500px;
 }
-
 .result .details
 {
     width: 100%;
 }
-
 .result .details td
 {
     width: 50%;
 }
-
 .result .details td.right
 {
     text-align: right;
 }
-
 .result .details td.left .popup-toggle
 {
     margin-left: 468px;
 }
-
 .result .details td.right .popup-toggle
 {
     margin-right: 480px;
 }
-
 /* ========================================================================
  * Image comparator.
  * ======================================================================== */
- 
 .popup
 {
     width: 100%;
