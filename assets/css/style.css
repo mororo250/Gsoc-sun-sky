@@ -1,4 +1,70 @@
 /* ========================================================================
+ * Rendering results.
+ * ======================================================================== */
+
+.result
+{
+    background-color: #2f2f2f;
+    margin-bottom: 60px;
+}
+
+.result td
+{
+    background-color: inherit;
+}
+
+.result .title
+{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.result .legend
+{
+    margin-bottom: 10px;
+    color: #777;
+    font-style: italic;
+}
+
+.result .reference,
+.result .output
+{
+    width: 510px;
+}
+
+.result .reference img,
+.result .output img
+{
+    max-width: 500px;
+}
+
+.result .details
+{
+    width: 100%;
+}
+
+.result .details td
+{
+    width: 50%;
+}
+
+.result .details td.right
+{
+    text-align: right;
+}
+
+.result .details td.left .popup-toggle
+{
+    margin-left: 468px;
+}
+
+.result .details td.right .popup-toggle
+{
+    margin-right: 480px;
+}
+
+/* ========================================================================
  * Image comparator.
  * ======================================================================== */
  
