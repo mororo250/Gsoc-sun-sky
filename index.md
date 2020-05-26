@@ -1,4 +1,5 @@
 ---
+layout: home
 title: Revisiting Physical Sun and Sky Model Gsoc 2020
 ---
 
