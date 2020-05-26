@@ -1,7 +1,10 @@
   
 ---
-layout: page
+layout: post
 title: Appleseed skydome Comparison
+js: /assets/js/image_comparasion.js
+ext-js: https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
+css: /assets/css/styles.css
 ---
 
 % assign date_format = site.date_format | default: "%B %-d, %Y" %}
@@ -12,10 +15,6 @@ title: Appleseed skydome Comparison
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="/assets/js/image_comparasion.js"></script>
-<style type="/assets/css/styles.css"></style>
 
 <div class="result">
     <table>
