@@ -7,15 +7,7 @@ ext-js: https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 css: /assets/css/styles.css
 ---
 
-% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
-
+<!--
 <div class="result">
     <table>
         <tr>
@@ -321,4 +313,4 @@ css: /assets/css/styles.css
             </td>
         </tr>
     </table>
-</div>
+</div> -->
