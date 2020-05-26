@@ -5,54 +5,16 @@ js: /assets/js/img_comp_2.js
 css: /assets/css/img_comp_style.css
 ---
 
-<div class="result">
-    <table>
-        <tr>
-            <td class="title" colspan="3">Arnold Theta 0</td>
-        </tr>
-        <tr>
-            <td class="Appleseed_old">
-                <div class="legend">Appleseed old</div>
-                <a href="\Gsoc-sun-sky\assets\img\sky_color_comp\Appleseed_sky_old_0.jpg"><img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Appleseed_sky_old_0.jpg" alt="Appleseed old" height="250" width="450" title="Appleseed old" /></a>
-            </td>
-            <td class="Arnold">
-                <div class="legend">Arnold</div>
-                <a href="\Gsoc-sun-sky\assets\img\sky_color_comp\Arnold_sky_0.jpg"><img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Arnold_sky_0.jpg" alt="Arnold" height="250" width="450" title="Arnold" /></a>
-            </td>
-            <td class="Appleseed">
-                <div class="legend">Appleseed</div>
-                <a href="\Gsoc-sun-sky\\assets\img\sky_color_comp\Appleseed_sky_0.jpg"><img src="\Gsoc-sun-sky\\assets\img\sky_color_comp\Appleseed_sky_0.jpg" alt="Appleseed" height="250" width="450" title="Appleseed" /></a>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <table class="details">
-                    <tr>
-                        <td class="left">
-                            <div class="popup">
-                                <div class="window">
-                                    <div class="compare-images">
-                                        <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Arnold_sky_0.jpg" alt="Arnold" />
-                                        <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Appleseed_sky_old_0.jpg" alt="Appleseed old" />
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="popup-toggle" href="#">Compare</a>
-                        </td>
-                        <td class="right">
-                            <div class="popup">
-                                <div class="window">
-                                    <div class="compare-images">
-                                        <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Appleseed_sky_0.jpg" alt="Appleseed" />
-                                        <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Arnold_sky_0.jpg" alt="Arnold" />
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="popup-toggle" href="#">Compare</a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Appleseed_sky_old_0.jpg" width="300" height="200">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Arnold_sky_0.jpg" width="300" height="200">
+  </div>
 </div>
+
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
