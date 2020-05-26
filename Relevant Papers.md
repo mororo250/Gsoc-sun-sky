@@ -1,4 +1,7 @@
-### Relevant papers
+---
+layout: page
+title: Relevant papers
+---
 
 A List of relevant/intersting paper to this projects:
 
