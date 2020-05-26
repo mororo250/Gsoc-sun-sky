@@ -1,4 +1,6 @@
-# To do list
+---
+title: To do list
+---
 
 ## Week 1 (May 05 - 10):
   - [ ] Do any necessary work on [https://github.com/appleseedhq/appleseed/pull/2811](https://github.com/appleseedhq/appleseed/pull/2811).
