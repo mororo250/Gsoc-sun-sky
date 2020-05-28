@@ -11,13 +11,15 @@ A List of relevant/intersting paper to this projects:
 
 - [HOSEK L., WILKIE A.: An analytic model for full spectral sky-dome radiance. ACM Transactions on Graphics (TOG) 31, 4 (2012), 95](https://cgg.mff.cuni.cz/projects/SkylightModelling/)
 
-- [Real-time Spectral Scattering in Large-scale Natural Participating Media.]()
-
 ##### Numerical models
 
 - [Nishita, Tomoyuki & Dobashi, Yoshinori & Kaneda, K. & Yamashita, Hideo. (1996). Display method of the sky color taking into account multiple scattering.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.75.5595&rep=rep1&type=pdf)
 
+- [Jensen, H. & Riley, Kirk & Ebert, David & Kraus, Martin & Tessendorf, Jerry & Hansen, Charles. (2004). Efficient Rendering of Atmospheric Phenomena.](https://www.researchgate.net/publication/2900319_Efficient_Rendering_of_Atmospheric_Phenomena)
+
 - [Haber, Jörg & Magnor, Marcus & Seidel, Hans-Peter. (2005). Physically based Simulation of Twilight Phenomena. Transactions on Graphics, v.24, 1353-1373 (2005). 24. 10.1145/1095878.1095884.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.67.2567&rep=rep1&type=pdf)
+
+- [Bruneton, Eric and Fabrice Neyret. “Precomputed Atmospheric Scattering.” Comput. Graph. Forum 27 (2008): 1079-1086.](http://www-ljk.imag.fr/Publications/Basilic/com.lmc.publi.PUBLI_Article@11e7cdda2f7_f64b69/article.pdf)
 
 - [Guimera, David et al. “A Physically-Based Spatio-Temporal Sky Model.” (2018)](https://www.semanticscholar.org/paper/A-Physically-Based-Spatio-Temporal-Sky-Model-Guimera-Gutierrez/84805ce6c1f5ec3becb45cb6825af9bbe7435755)
 
@@ -55,3 +57,9 @@ A List of relevant/intersting paper to this projects:
 
 - [Sadeghi, Iman & Muñoz, Adolfo & Laven, Philip & Jarosz, Wojciech & Serón, Francisco & Gutiérrez, Diego & Jensen, Henrik. (2012). Physically-Based Simulation of Rainbows. ACM Transactions on Graphics - TOG. 31. 1-12. 10.1145/2077341.2077344.](http://graphics.ucsd.edu/~henrik/papers/physically_based_simulation_of_rainbows.pdf)
 
+
+##### Repositories
+
+- [Clear sky models.](https://github.com/ebruneton/clear-sky-models)
+
+- [Sun sky.](https://github.com/andrewwillmott/sun-sky)
