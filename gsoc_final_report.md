@@ -50,9 +50,7 @@ Currently, this method of positioning the sun is available in all the plug-ins: 
 
 ### Other features and bug fixes:
 
-During this summer there ware several 
-
-
+During this summer I had to fix some bugs among them:
 
 ## Future work:
 
