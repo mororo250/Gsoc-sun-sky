@@ -66,10 +66,11 @@ I planned to implement this during this summer, unfortunately I didn’t have ti
 
 ### 3. Implement an improved Hosek implementation:
 
-
 Some other renderers have implemented an improved version of the Hosek model, as Vray and Corona Renderer. There are several ways to improve the Hosek sky model. Some of them are:
-
 
 Recompute all the input values using a more accurate non-analytical sky model, as libradtran for example.
 Include after sunset conditions to the original model.
 
+## Conclusion
+
+I am very grateful to GSOC and Appleseed for the opportunity to work on a project for a renderer engine like Appleseed. I special thanks to François Beaune, for the many insights and advice, and the whole Appleseed's community who creates an amaizing and supportive atmosphere around Appleseed. 
