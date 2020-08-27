@@ -18,7 +18,7 @@ During the summer my project was to improve the current Physical Sun and Sky mod
 
 Before the beginning of GSoC, I worked on a PR https://github.com/appleseedhq/appleseed/pull/2811 to fix the spectral illuminance to cieXYZ conversions. This fixed the blue/green tint in the sky:
 
-Before:		After:
+Before: After:
 
 ![](final_report_assets/compare_sky.png)
 
@@ -34,23 +34,21 @@ https://mororo250.github.io/Gsoc-sun-sky/Appleseed_comparison/appleseed_compare.
 
 Added a solar disc to the physical sky model.
 
+![](final_report_assets/Preetham_Sun.jpg)
 
-
-I also implemented the solar radiance function presented by Hosek-Wilkie in their paper: https://cgg.mff.cuni.cz/projects/SkylightModelling/
+I also implemented the solar radiance function presented by Hosek-Wilkie(https://cgg.mff.cuni.cz/projects/SkylightModelling/).
 
 ##### Using Hosek Radiance Function:
 
+![](final_report_assets/Preetham_Sun.jpg)
 
 ### Ability to configure the sun and the sky model with geographic location:
-
 
 Control of the sun Position based on options like Hours, minutes, seconds, Month, day, year, latitude and longitude, that allow the user to simulate a precise sun position.
  
 Currently, this method of positioning the sun is available in all the plug-ins: Blender, 3dMax and Maya, but it’s not possible to use it inside Appleseed Studio.
 
-
-
-
+![](final_report_assets/ezgif.com-gif-maker.gif)
 
 ### Other features and bug fixes:
 
