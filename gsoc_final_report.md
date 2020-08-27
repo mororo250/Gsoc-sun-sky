@@ -36,7 +36,7 @@ Added a solar disc to the physical sky model.
 
 ![](final_report_assets/Preetham_Sun.jpg)
 
-I also implemented the solar radiance function presented by Hosek-Wilkie(https://cgg.mff.cuni.cz/projects/SkylightModelling/).
+I also implemented the solar radiance function presented by [Hosek-Wilkie](https://cgg.mff.cuni.cz/projects/SkylightModelling/).
 
 ##### Using Hosek Radiance Function:
 
