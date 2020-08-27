@@ -20,7 +20,7 @@ Before the beginning of GSoC, I worked on a PR https://github.com/appleseedhq/ap
 
 Before:		After:
 
-
+![](final_report_assets/compare_sky.png)
 
 I had to refactor most of the code after gsoc started in order to merge it into Appleseed.
 
