@@ -16,7 +16,7 @@ During the summer my project was to improve the current Physical Sun and Sky mod
 
 ## Pre-GSoC work:
 
-Before the beginning of GSoC, I worked on a PR https://github.com/appleseedhq/appleseed/pull/2811 to fix the spectral illuminance to cieXYZ conversions. This fixed the blue/green tint in the sky:
+Before the beginning of GSoC, I start working on a PR [#2811](https://github.com/appleseedhq/appleseed/pull/2811) to fix the spectral illuminance to cieXYZ conversions. This fixed the blue/green tint in the sky:
 
 ![](final_report_assets/compare_sky.png)
 
