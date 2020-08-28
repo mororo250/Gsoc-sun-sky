@@ -30,7 +30,7 @@ https://mororo250.github.io/Gsoc-sun-sky/Appleseed_comparison/appleseed_compare.
 
 ### Appleseed Sun Disc:
 
-Though Appleseed physicall sky had a solar radiance function implemented but it was missing a visible solar disc. Initially, I used the already implmented preetham's radiance function to implement the solar disc.
+Though Appleseed physicall sky already had a solar radiance function implemented, but it was missing a visible solar disc. Initially, I used the already implmented preetham's radiance function to implement a visible solar disc.
 
 ![](final_report_assets/Preetham_Sun.jpg)
 
@@ -38,7 +38,7 @@ Later, I also implemented the solar radiance function presented by [Hosek-Wilkie
 
 ##### Using Hosek Radiance Function:
 
-![](final_report_assets/Preetham_Sun.jpg)
+![](final_report_assets/Hosek_Sun.jpg)
 
 ### Ability to configure the sun and the sky model with geographic location:
 
@@ -68,8 +68,9 @@ I planned to implement this during this summer, unfortunately I didn’t have ti
 
 Some other renderers have implemented an improved version of the Hosek model, as Vray and Corona Renderer. There are several ways to improve the Hosek sky model. Some of them are:
 
-Recompute all the input values using a more accurate non-analytical sky model, as libradtran for example.
-Include after sunset conditions to the original model.
+* Recompute all the input values using a more accurate non-analytical sky model, as libradtran for example.
+* Include after sunset conditions to the original model.
+* Add aerial perspective.
 
 ## Conclusion
 
