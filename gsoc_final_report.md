@@ -2,17 +2,17 @@
  
 ## Revisiting Physical Sun and Sky Model
 
-During the summer my project was to improve the current Physical Sun and Sky model fixing the blue/green tint on the sky and add features, such as a visible solar disk, the ability to configure the sun and the sky model with geographic location and other improvements and features for the sun and sky.
+During this summer my GSOC project was to improve the current Physical Sun and Sky model fixing the blue/green tint on the sky and add features, such as a visible solar disk, the ability to configure the sun and the sky model with geographic location and other improvements and features for the sun and sky.
 
 ## Code:
 
-> [#2811](https://github.com/appleseedhq/appleseed/pull/2811) 
-> [#2873](https://github.com/appleseedhq/appleseed/pull/2873)
-> [#2870](https://github.com/appleseedhq/appleseed/pull/2870)
-> [#2866](https://github.com/appleseedhq/appleseed/pull/2866)
-> [#518](https://github.com/appleseedhq/blenderseed/pull/518)
-> [#365](https://github.com/appleseedhq/appleseed-max/pull/365)
-> [#265](https://github.com/appleseedhq/appleseed-maya/pull/235)
+* [#2811](https://github.com/appleseedhq/appleseed/pull/2811) 
+* [#2873](https://github.com/appleseedhq/appleseed/pull/2873)
+* [#2870](https://github.com/appleseedhq/appleseed/pull/2870)
+* [#2866](https://github.com/appleseedhq/appleseed/pull/2866)
+* [#518](https://github.com/appleseedhq/blenderseed/pull/518)
+* [#365](https://github.com/appleseedhq/appleseed-max/pull/365)
+* [#265](https://github.com/appleseedhq/appleseed-maya/pull/235)
 
 ## Pre-GSoC work:
 
