@@ -30,7 +30,7 @@ https://mororo250.github.io/Gsoc-sun-sky/Appleseed_comparison/appleseed_compare.
 
 ### Appleseed Sun Disc:
 
-Added a solar disc to the physical sky model.
+Though Appleseed physicall sky had a solar radiance function implemented but it was missing a visible solar disc. Added a solar disc to the physical sky model.
 
 ![](final_report_assets/Preetham_Sun.jpg)
 
