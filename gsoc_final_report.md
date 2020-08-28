@@ -30,11 +30,11 @@ https://mororo250.github.io/Gsoc-sun-sky/Appleseed_comparison/appleseed_compare.
 
 ### Appleseed Sun Disc:
 
-Though Appleseed physicall sky had a solar radiance function implemented but it was missing a visible solar disc. Added a solar disc to the physical sky model.
+Though Appleseed physicall sky had a solar radiance function implemented but it was missing a visible solar disc. Initially, I used the already implmented preetham's radiance function to implement the solar disc.
 
 ![](final_report_assets/Preetham_Sun.jpg)
 
-I also implemented the solar radiance function presented by [Hosek-Wilkie](https://cgg.mff.cuni.cz/projects/SkylightModelling/).
+Later, I also implemented the solar radiance function presented by [Hosek-Wilkie](https://cgg.mff.cuni.cz/projects/SkylightModelling/) in order to get a more precise solar radiance function in lower elevations.
 
 ##### Using Hosek Radiance Function:
 
