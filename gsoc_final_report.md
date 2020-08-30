@@ -50,13 +50,32 @@ Currently, this method of positioning the sun is available in all the plug-ins: 
 
 ![](final_report_assets/ezgif.com-gif-maker.gif)
 
+### Other features and some critical bugs:
+
+#### Ground color and ground albedo:
+
+Now the user can select any color as the ground albedo and the ground color is set based on ground albedo specified by the user.
+
+#### Fireflies:
+
+Backing the sun disc into the sky causes several fireflies to appear:
+
+The artifacts are due to the fact that after backing the sun into the sky. It becomes one of the most diffulcut to sample types of environment maps, those with the
+majority of their illumination concentrated in a set of small bright area. Usually, to solve this problem it's used some kind of probability distribution function(pdf) based on the [environment map’s luminance distribution](http://web.cs.wpi.edu/~emmanuel/courses/cs563/S07/projects/envsample.pdf). This would be the optimal solution for this problem, but it's necessary to precompute the sky into a texture for it to be possible. As a temporary solution for this I implemented 
+
+#### Sun's radiance weaker than expected:
+
+When comparing the results of appleseed with other renderers I realized that the Appleseed's sun radiance was 3 to 4 times weaker than the results from other renderers, even though, the sky radiance was the same. 
+
+The problem was actually related to how Appleseed calculates the sky radiance. 
+
 ## Future work:
 
 There are several ways to improve the current physical sky model in Appleseed. I have selected some features and improvements that I am planning to implement in Appleseed in the next few months:
 
 ### 1. Precomputed sky and sun:
 
-In the current implementation we compute the sun/sky radiance every time we sample it. The problem of this is that we compute the radiance coming from a  specific direction of the sky several times over. One way to speed up the current implementation of the sun and sky model is to precompute the sky into a texture.
+In the current implementation we compute the sun/sky radiance every time we sample it. The problem of this is that we compute the radiance coming from a specific direction of the sky several times over. One way to speed up the current implementation of the sun and sky model is to precompute the sky into a texture. This also provide a better solution for the fireflies problem.
 
 ### 2. Adapting the model to ExoPlanets Scenes:
 
@@ -73,7 +92,7 @@ Some other renderers have implemented an improved version of the Hosek model, as
 
 ### 4. Improvement in the user interface for the solar position calculator
 
-Alow the user to select geographic position by a map and by city.
+Currently the user needs to manualy set latitude, longitude and time zone. 
 
 ## Conclusion
 
