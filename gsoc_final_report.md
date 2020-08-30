@@ -44,7 +44,7 @@ Later, I also implemented the solar radiance function presented by [Hosek-Wilkie
 
 ### Ability to configure the sun and the sky model with geographic location:
 
-The goal hete was to allow the users to control the sun Position based on options like Hours, minutes, seconds, Month, day, year, latitude and longitude, that allow the user to simulate a precise sun position. To achive this I used the algorithm presented by Jean Meeus in his book Astronomical Algorithms. This algorithm is also used by [the solar position calculator](https://www.esrl.noaa.gov/gmd/grad/solcalc/index.html) of National Oceanic and Atmospheric Administration (NOAA).
+The goal here was to allow the users to control the sun Position based on options like Hours, minutes, seconds, Month, day, year, latitude and longitude, that allow the user to simulate a precise sun position. To achive this I used the algorithm presented by Jean Meeus in his book Astronomical Algorithms. This algorithm is also used by [the solar position calculator](https://www.esrl.noaa.gov/gmd/grad/solcalc/index.html) of National Oceanic and Atmospheric Administration (NOAA).
  
 Currently, this method of positioning the sun is available in all the plug-ins: Blender, 3dMax and Maya, but it’s not possible to use it inside Appleseed Studio.
 
