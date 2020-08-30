@@ -14,27 +14,29 @@ During this summer my GSOC project was to improve the current Physical Sun and S
 * [#365](https://github.com/appleseedhq/appleseed-max/pull/365)
 * [#265](https://github.com/appleseedhq/appleseed-maya/pull/235)
 
-## Pre-GSoC work:
+## GSoC work:
 
-Before the beginning of GSoC, I start working on a PR [#2811](https://github.com/appleseedhq/appleseed/pull/2811) to fix the spectral illuminance to cieXYZ conversions. This fixed the blue/green tint in the sky:
+### Fix green/blue tint:
+
+Before the beginning of GSoC, I start working on the PR [#2811](https://github.com/appleseedhq/appleseed/pull/2811) to fix the spectral to cieXYZ conversions. Previusly, Appleseed was using spectral reflectance to ciexyz method to convert emissive cases. This would give a blue/green tint everytime that a spectral light was beeing used. Fixing the problem not only fixed the blue/green tint present on the sky models, but improved the overall phytelity of appleseed:
 
 ![](final_report_assets/compare_sky.png)
 
-I had to refactor most of the code after gsoc started in order to merge it into Appleseed.
+During the community bonding period I had to refactor most of this PR.
 
-A Full comparison among before/after appleseed and Corona/Arnold renderers:
+A Full comparison among appleseed before and after [#2811](https://github.com/appleseedhq/appleseed/pull/2811) and Corona renderer and Arnold.
 https://mororo250.github.io/Gsoc-sun-sky/Appleseed_comparison/appleseed_compare.
-
-## GSoC work:
 
 
 ### Appleseed Sun Disc:
 
-Though Appleseed physicall sky already had a solar radiance function implemented, but it was missing a visible solar disc. Initially, I used the already implmented preetham's radiance function to implement a visible solar disc.
+Even though Appleseed physicall sky already had a solar radiance function implemented, it was missing a visible solar disc. Initially, I used the already implmented preetham's radiance function to implement a visible solar disc with limb darkening. On my proposal, I included some extra optical phenomena for the sun, such as [red flash](https://www.sciencephoto.com/media/536661/view/red-flash-of-the-sun) and [mirrages](https://en.wikipedia.org/wiki/Mirage_of_astronomical_objects). Unfortunally those phenomena are impossible to be implemented on a analytcal sun/sky model, also mirrages needs [curved ray tracing](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub) which are not supported by appleseed.
+
+##### Using Preetham6 Radiance Function:
 
 ![](final_report_assets/Preetham_Sun.jpg)
 
-Later, I also implemented the solar radiance function presented by [Hosek-Wilkie](https://cgg.mff.cuni.cz/projects/SkylightModelling/) in order to get a more precise solar radiance function in lower elevations.
+Later, I also implemented the solar radiance function presented by [Hosek-Wilkie](https://cgg.mff.cuni.cz/projects/SkylightModelling/).
 
 ##### Using Hosek Radiance Function:
 
@@ -42,19 +44,15 @@ Later, I also implemented the solar radiance function presented by [Hosek-Wilkie
 
 ### Ability to configure the sun and the sky model with geographic location:
 
-Control of the sun Position based on options like Hours, minutes, seconds, Month, day, year, latitude and longitude, that allow the user to simulate a precise sun position.
+The goal hete was to allow the users to control the sun Position based on options like Hours, minutes, seconds, Month, day, year, latitude and longitude, that allow the user to simulate a precise sun position. To achive this I used the algorithm presented by Jean Meeus in his book Astronomical Algorithms. This algorithm is also used by [the solar position calculator](https://www.esrl.noaa.gov/gmd/grad/solcalc/index.html) of National Oceanic and Atmospheric Administration (NOAA).
  
 Currently, this method of positioning the sun is available in all the plug-ins: Blender, 3dMax and Maya, but it’s not possible to use it inside Appleseed Studio.
 
 ![](final_report_assets/ezgif.com-gif-maker.gif)
 
-### Other features and bug fixes:
-
-During this summer I had to fix some bugs among them:
-
 ## Future work:
 
-There are several ways to improve the current physical sky model in Appleseed. I have select some features and improvements that I am planning to implement in Appleseed in the next few months:
+There are several ways to improve the current physical sky model in Appleseed. I have selected some features and improvements that I am planning to implement in Appleseed in the next few months:
 
 ### 1. Precomputed sky and sun:
 
@@ -62,7 +60,8 @@ In the current implementation we compute the sun/sky radiance every time we samp
 
 ### 2. Adapting the model to ExoPlanets Scenes:
 
-I planned to implement this during this summer, unfortunately I didn’t have time to do it. Ability to bind multiple suns to the sky texture and ability to change the sun's blackbody radiation. https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf
+[The ability to bind multiple suns to the sky texture and ability to change the sun's blackbody radiation.](https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
+I innitially planned to implement this during this summer, unfortunately I didn’t have time to do it.
 
 ### 3. Implement an improved Hosek implementation:
 
@@ -71,6 +70,10 @@ Some other renderers have implemented an improved version of the Hosek model, as
 * Recompute all the input values using a more accurate non-analytical sky model, as libradtran for example.
 * Include after sunset conditions to the original model.
 * Add aerial perspective.
+
+### 4. Improvement in the user interface for the solar position calculator
+
+Alow the user to select geographic position by a map and by city.
 
 ## Conclusion
 
