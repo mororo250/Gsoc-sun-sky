@@ -116,16 +116,14 @@ I am very grateful to GSoC and appleseed for the opportunity to work on a projec
 
 ## References
 
-[1] PREETHAM A. J., SHIRLEY P., SMITS B.: A practical ana-ytic model for daylight. In Proceedings of the 26th annual conference on Computer graphics and interactive techniques(1999), ACM Press/Addison-Wesley Publishing
+[[1] PREETHAM A. J., SHIRLEY P., SMITS B.: A practical ana-ytic model for daylight. In Proceedings of the 26th annual conference on Computer graphics and interactive techniques(1999), ACM Press/Addison-Wesley Publishing](https://www2.cs.duke.edu/courses/cps124/spring08/assign/07_papers/p91-preetham.pdf)
 
 [[2] HOSEK L., WILKIE A.: An analytic model for full spectral sky-dome radiance. ACM Transactions on Graphics (TOG) 31, 4 (2012), 95](https://cgg.mff.cuni.cz/projects/SkylightModelling)
 
-[3] Hosek, Lukas, and Alexander Wilkie. “Adding a Solar-Radiance Function to the Hošek-Wilkie Skylight Model.” IEEE Computer Graphics and Applications 33 (2013): 44-52.
+[[3] Hosek, Lukas, and Alexander Wilkie. “Adding a Solar-Radiance Function to the Hošek-Wilkie Skylight Model.” IEEE Computer Graphics and Applications 33 (2013): 44-52.](https://cgg.mff.cuni.cz/projects/SkylightModelling)
 
-[4] Lintu, Andrei et al. “Realistic Solar Disc Rendering.” WSCG (2005).
+[[4] Lintu, Andrei et al. “Realistic Solar Disc Rendering.” WSCG (2005).](https://www.researchgate.net/publication/47863938_Realistic_Solar_Disc_Rendering)
 
 [[5] Serón, Francisco J. et al. “Implementation of a method of curved ray tracing for inhomogeneous atmospheres.” Comput. Graph. 29 (2005): 95-108.](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub)
 
 [[6] Wilkie, Alexander & Hošek, Lukas. (2013). Predicting Sky Dome Appearance on Earth-like Extrasolar Worlds. Proceedings - SCCG 2013: 29th Spring Conference on Computer Graphics.](https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
-
-[7] http://www.brucelindbloom.com/index.html?Eqn_Spect_to_XYZ.html
