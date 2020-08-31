@@ -33,7 +33,7 @@ https://mororo250.github.io/Gsoc-sun-sky/Appleseed_comparison/appleseed_compare.
 
 Even though Appleseed's physical sky already had a solar radiance function implemented, it was missing a visible solar disc. Initially, I used the already implemented Preetham's radiance function to implement a visible solar disc with limb darkening. In my proposal, I included some extra optical phenomena for the sun, such as [red flash](https://www.sciencephoto.com/media/536661/view/red-flash-of-the-sun) and [mirrages](https://en.wikipedia.org/wiki/Mirage_of_astronomical_objects). Unfortunately, those phenomena are impossible to be implemented on an analytical sun/sky model, also mirages needs curved ray tracing[5](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub) which are not supported by Appleseed.
 
-##### Using Preetham6 Radiance Function:
+##### Using Preetham Radiance Function:
 
 ![](final_report_assets/Preetham_Sun.jpg)
 
