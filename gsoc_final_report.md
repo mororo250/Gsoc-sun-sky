@@ -64,7 +64,7 @@ Backing the sun disc into the sky causes several fireflies to appear:
 
 ![](final_report_assets/fireflies.jpg)
 
-The artifacts happen due to the fact that, after backing the sun into the sky, it becomes one of the most difficult to sample types of environment maps, those with the majority of their illumination concentrated in a set of small bright areas. Usually, to solve this problem it is used some kind of probability distribution function (pdf) based on the [environment map’s luminance distribution](http://web.cs.wpi.edu/~emmanuel/courses/cs563/S07/projects/envsample.pdf). This would be the optimal solution for this problem, but it is necessary to precompute the sky into a texture for it to be possible. As a temporary solution for this, I changed the pdf function, so that when a ray hit the sun its pdf is bigger than the sky's pdf by a factor of (sun radiance / sky radiance). 
+The artifacts happen due to the fact that, after backing the sun into the sky, it becomes one of the most difficult to sample types of environment maps, those with the majority of their illumination concentrated in a set of small bright areas. Usually, to solve this problem we [importance sample](http://web.cs.wpi.edu/~emmanuel/courses/cs563/S07/projects/envsample.pdf) the env map. This would be the optimal solution for this problem, but it is necessary to precompute the sky into a texture for it to be possible. As a temporary solution for this, I changed the pdf function, so that when a ray hit the sun its pdf is bigger than the sky's pdf by a factor of (sun radiance / sky radiance).
 
 #### Sun's radiance weaker than expected:
 
