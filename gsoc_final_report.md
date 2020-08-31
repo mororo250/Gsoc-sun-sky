@@ -21,6 +21,7 @@ During this summer my GSOC project was to improve the current Physical Sun and S
 Before the beginning of GSoC, I start working on the PR [#2811](https://github.com/appleseedhq/appleseed/pull/2811) to fix the spectral to cieXYZ conversions. Previously, Appleseed was using spectral reflectance to CIEXYZ method to convert emissive cases. This was given a blue/green tint every time that a spectral light was being used. Fixing the problem not only fixed the blue/green tint present on the sky models but improved the overall fidelity of Appleseed:
 
 ![](final_report_assets/compare_sky.png)
+*Old version on the left and newer version on the right*
 
 During the community bonding period, I had to refactor most of this PR.
 
@@ -49,7 +50,6 @@ The goal here was to allow the users to control the sun Position based on option
 Currently, this method of positioning the sun is available in all the plug-ins: Blender, 3dMax, and Maya, but it’s not possible to use it inside Appleseed Studio.
 
 ![](final_report_assets/ezgif.com-gif-maker.gif)
-*Old version on the left and newer version on the right*
 
 ### Other features and some critical bugs:
 
