@@ -57,18 +57,25 @@ Currently, this method of positioning the sun is available in all the plug-ins: 
 
 Now the user can select any color as the ground albedo and the ground color is set based on ground albedo specified by the user.
 
+![](final_report_assets/ground_color.jpg)
+
 #### Fireflies:
 
 Backing the sun disc into the sky causes several fireflies to appear:
 
-The artifacts happen due to the fact that after backing the sun into the sky. It becomes one of the most difficult to sample types of environment maps, those with the
-majority of their illumination concentrated in a set of small bright areas. Usually, to solve this problem it's used some kind of probability distribution function(pdf) based on the [environment map’s luminance distribution](http://web.cs.wpi.edu/~emmanuel/courses/cs563/S07/projects/envsample.pdf). This would be the optimal solution for this problem, but it's necessary to precompute the sky into a texture for it to be possible. As a temporary solution for this, I implemented. 
+![](final_report_assets/fireflies.jpg)
+
+The artifacts happen due to the fact that after backing the sun into the sky. It becomes one of the most difficult to sample types of environment maps, those with the majority of their illumination concentrated in a set of small bright areas. Usually, to solve this problem it's used some kind of probability distribution function(pdf) based on the [environment map’s luminance distribution](http://web.cs.wpi.edu/~emmanuel/courses/cs563/S07/projects/envsample.pdf). This would be the optimal solution for this problem, but it's necessary to precompute the sky into a texture for it to be possible. As a temporary solution for this, I changed the pdf function, so that when a ray hit the sun it's pdf is bigger than the sky's pdf by a factor of (sun radiance / sky radiance). 
 
 #### Sun's radiance weaker than expected:
 
 When comparing the results of Appleseed with other renderers, I noticed that Appleseed's sun radiance was 3 to 4 times weaker than the results from other renderers, even though the sky radiance was the same.
 
-The problem was related to how Appleseed calculates the sky radiance. 
+![](final_report_assets/sun_radiance_before.jpg)
+
+The problem was related to how Appleseed was calculating the sky radiance.
+
+![](final_report_assets/sun_radiance_after.jpg)
 
 ## Future work:
 
