@@ -73,6 +73,13 @@ When comparing the results of appleseed with other renderers, I noticed that app
 ![](final_report_assets/sun_radiance_before.jpg)
 
 The problem was related to how appleseed was calculating the sky radiance.
+<pre><code>radiance *=
+      luminance                                         // start with computed luminance
+    / sum_value(radiance * XYZCMFCIE19312Deg[1])        // normalize to unit luminance
+    * (1.0f / 683.0f)                                   // convert lumens to Watts
+    * RcpPi<float>();                                   // convert irradiance to radiance</code></pre>
+
+There are two problems here. First, the normalization is wrong. The correct formula is radiance * XYZCMFCIE19312Deg[1] * step_lambda [7](http://www.brucelindbloom.com/index.html?Eqn_Spect_to_XYZ.html), being step_lamda the range between two wavelengths. Second, we don't need to convert irradiance to radiance because we are already computing radiance.
 
 ![](final_report_assets/sun_radiance_after.jpg)
 
@@ -120,3 +127,5 @@ I am very grateful to GSoC and appleseed for the opportunity to work on a projec
 [[5] Serón, Francisco J. et al. “Implementation of a method of curved ray tracing for inhomogeneous atmospheres.” Comput. Graph. 29 (2005): 95-108.](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub)
 
 [[6] Wilkie, Alexander & Hošek, Lukas. (2013). Predicting Sky Dome Appearance on Earth-like Extrasolar Worlds. Proceedings - SCCG 2013: 29th Spring Conference on Computer Graphics.](https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
+
+[7] http://www.brucelindbloom.com/index.html?Eqn_Spect_to_XYZ.html
