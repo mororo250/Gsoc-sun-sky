@@ -31,13 +31,13 @@ https://mororo250.github.io/Gsoc-sun-sky/Appleseed_comparison/appleseed_compare.
 
 ### Appleseed Sun Disc:
 
-Even though Appleseed's physical sky already had a solar radiance function implemented, it was missing a visible solar disc. Initially, I used the already implemented Preetham's radiance function to implement a visible solar disc with limb darkening. In my proposal, I included some extra optical phenomena for the sun, such as [red flash](https://www.sciencephoto.com/media/536661/view/red-flash-of-the-sun) and [mirrages](https://en.wikipedia.org/wiki/Mirage_of_astronomical_objects). Unfortunately, those phenomena are impossible to be implemented on an analytical sun/sky model, also mirages needs [curved ray tracing](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub) which are not supported by Appleseed.
+Even though Appleseed's physical sky already had a solar radiance function implemented, it was missing a visible solar disc. Initially, I used the already implemented Preetham's radiance function to implement a visible solar disc with limb darkening. In my proposal, I included some extra optical phenomena for the sun, such as [red flash](https://www.sciencephoto.com/media/536661/view/red-flash-of-the-sun) and [mirrages](https://en.wikipedia.org/wiki/Mirage_of_astronomical_objects). Unfortunately, those phenomena are impossible to be implemented on an analytical sun/sky model, also mirages needs curved ray tracing[5](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub) which are not supported by Appleseed.
 
 ##### Using Preetham6 Radiance Function:
 
 ![](final_report_assets/Preetham_Sun.jpg)
 
-Later, I also implemented the solar radiance function presented by [Hosek-Wilkie](https://cgg.mff.cuni.cz/projects/SkylightModelling/).
+Later, I also implemented the solar radiance function presented by Hosek-Wilkie[2](https://cgg.mff.cuni.cz/projects/SkylightModelling/).
 
 ##### Using Hosek Radiance Function:
 
@@ -79,29 +79,40 @@ The problem was related to how Appleseed was calculating the sky radiance.
 
 ## Future work:
 
-There are several ways to improve the current physical sky model in Appleseed. I have selected some features and improvements that I am planning to implement in Appleseed in the next few months:
+There are several ways to improve the current physical sky model in Appleseed. I have selected some features and improvements which I am planning to implement in Appleseed in the next few months:
 
 ### 1. Precomputed sky and sun:
 
-In the current implementation, we compute the sun/sky radiance every time we sample it. The problem of this is that we compute the radiance coming from a specific direction of the sky several times over. One way to speed up the current implementation of the sun and sky model is to precompute the sky into a texture. This also provides a better solution for the fireflies.
+In the current implementation, we compute the sun/sky radiance every time we either sample or evaluate it. The problem of this is that we compute the radiance coming from a specific direction of the sky several times over. One way to speed up the current implementation of the sun and sky model is to precompute the sky into a texture. This also provides a better solution for the fireflies.
 
 ### 2. Adapting the model to ExoPlanets Scenes:
 
-[The ability to bind multiple suns to the sky texture and ability to change the sun's blackbody radiation.](https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
+The ability to bind multiple suns to the sky texture and ability to change the sun's blackbody radiation.[6](https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
 I initially planned to implement this during this summer. Unfortunately, I didn’t have time to do it.
 
 ### 3. Implement an improved Hosek implementation:
 
-Some other renderers have implemented an improved version of the Hosek model, as Vray and Corona Renderer. There are several ways to improve the Hosek sky model. Some of them are:
+There are several ways to improve the Hosek sky model. Some of them are:
 
 * Recompute all the input values using a more accurate non-analytical sky model, as libradtran for example.
 * Include after sunset conditions to the original model.
 * Add aerial perspective.
 
+Some other renderers have implemented an improved version of the Hosek model, as Vray and Corona Renderer, providing much more pleasant and accurate results.
+
 ### 4. Improvement in the user interface for the solar position calculator
 
-Currently, the user needs to manually set latitude, longitude, and time zone. 
+Currently, the user needs to manually set latitude, longitude, and time zone. This is not very intuitive and could be improved by allowing the user to set those variables by either selecting it on a map or searching for a specific city by name.
 
 ## Conclusion
 
-I am very grateful to GSOC and Appleseed for the opportunity to work on a project for a renderer engine like Appleseed. I special thanks to François Beaune, for the many insights and advice, and the whole Appleseed's community who creates an amazing and supportive atmosphere around Appleseed. 
+I am very grateful to GSOC and Appleseed for the opportunity to work on a project for a renderer engine like Appleseed. I learned far more than I thought I would from color science to how to properly sample an environmental map. I special thanks to François Beaune, for the many insights and advice, and the whole Appleseed's community who creates an amazing and supportive atmosphere around Appleseed.
+
+## References
+
+[1] PREETHAM A. J., SHIRLEY P., SMITS B.: A practical ana-ytic model for daylight. In Proceedings of the 26th annual conference on Computer graphics and interactive techniques(1999), ACM Press/Addison-Wesley Publishing
+[2] HOSEK L., WILKIE A.: An analytic model for full spectral sky-dome radiance. ACM Transactions on Graphics (TOG) 31, 4 (2012), 95((https://cgg.mff.cuni.cz/projects/SkylightModelling))
+[3] Hosek, Lukas, and Alexander Wilkie. “Adding a Solar-Radiance Function to the Hošek-Wilkie Skylight Model.” IEEE Computer Graphics and Applications 33 (2013): 44-52.
+[4] Lintu, Andrei et al. “Realistic Solar Disc Rendering.” WSCG (2005).
+[5] Serón, Francisco J. et al. “Implementation of a method of curved ray tracing for inhomogeneous atmospheres.” Comput. Graph. 29 (2005): 95-108.(https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub)
+[6] Wilkie, Alexander & Hošek, Lukas. (2013). Predicting Sky Dome Appearance on Earth-like Extrasolar Worlds. Proceedings - SCCG 2013: 29th Spring Conference on Computer Graphics.(https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
