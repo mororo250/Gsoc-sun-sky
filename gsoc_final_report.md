@@ -77,7 +77,7 @@ The problem was related to how appleseed was calculating the sky radiance.
       luminance                                         // start with computed luminance
     / sum_value(radiance * XYZCMFCIE19312Deg[1])        // normalize to unit luminance
     * (1.0f / 683.0f)                                   // convert lumens to Watts
-    * RcpPi<float>();                                       // convert irradiance to radiance</code></pre>
+    * RcpPi<float>();                                           // convert irradiance to radiance</code></pre>
 
 There are two problems here. First, the normalization is wrong. The correct formula is radiance * XYZCMFCIE19312Deg[1] * step_lambda [7](http://www.brucelindbloom.com/index.html?Eqn_Spect_to_XYZ.html), being step_lamda the range between two wavelengths. Second, we don't need to convert irradiance to radiance because we are already computing radiance.
 
