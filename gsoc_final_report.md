@@ -47,7 +47,7 @@ Later, I also implemented the solar radiance function presented by Hosek-Wilkie[
 
 The goal here was to allow the users to control the sun Position based on options like Hours, minutes, seconds, month, day, year, latitude and longitude, that allow the user to simulate a precise sun position. To achieve this I used the algorithm presented by Jean Meeus in his book Astronomical Algorithms. This algorithm is also used by [the solar position calculator](https://www.esrl.noaa.gov/gmd/grad/solcalc/index.html) of the National Oceanic and Atmospheric Administration (NOAA).
  
-Currently, this method of positioning the sun is available in all the plug-ins: Blender, 3dMax, and Maya, but it’s not possible to use it inside Appleseed Studio.
+Currently, this method of positioning the sun is available in all the plug-ins: Blender, 3dMax, and Maya, but it is not possible to use it inside Appleseed Studio.
 
 ![](final_report_assets/ezgif.com-gif-maker.gif)
 
@@ -65,7 +65,7 @@ Backing the sun disc into the sky causes several fireflies to appear:
 
 ![](final_report_assets/fireflies.jpg)
 
-The artifacts happen due to the fact that after backing the sun into the sky. It becomes one of the most difficult to sample types of environment maps, those with the majority of their illumination concentrated in a set of small bright areas. Usually, to solve this problem it's used some kind of probability distribution function(pdf) based on the [environment map’s luminance distribution](http://web.cs.wpi.edu/~emmanuel/courses/cs563/S07/projects/envsample.pdf). This would be the optimal solution for this problem, but it's necessary to precompute the sky into a texture for it to be possible. As a temporary solution for this, I changed the pdf function, so that when a ray hit the sun it's pdf is bigger than the sky's pdf by a factor of (sun radiance / sky radiance). 
+The artifacts happen due to the fact that after backing the sun into the sky. It becomes one of the most difficult to sample types of environment maps, those with the majority of their illumination concentrated in a set of small bright areas. Usually, to solve this problem it is used some kind of probability distribution function(pdf) based on the [environment map’s luminance distribution](http://web.cs.wpi.edu/~emmanuel/courses/cs563/S07/projects/envsample.pdf). This would be the optimal solution for this problem, but it is necessary to precompute the sky into a texture for it to be possible. As a temporary solution for this, I changed the pdf function, so that when a ray hit the sun it's pdf is bigger than the sky's pdf by a factor of (sun radiance / sky radiance). 
 
 #### Sun's radiance weaker than expected:
 
