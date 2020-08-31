@@ -6,13 +6,13 @@ During this summer my GSoC project was to improve the current Physical Sun and S
 
 ## Code:
 
-* [#2811](https://github.com/appleseedhq/appleseed/pull/2811) 
-* [#2873](https://github.com/appleseedhq/appleseed/pull/2873)
-* [#2870](https://github.com/appleseedhq/appleseed/pull/2870)
-* [#2866](https://github.com/appleseedhq/appleseed/pull/2866)
-* [#518](https://github.com/appleseedhq/blenderseed/pull/518)
-* [#365](https://github.com/appleseedhq/appleseed-max/pull/365)
-* [#265](https://github.com/appleseedhq/appleseed-maya/pull/235)
+* [#2811 Fix spectral illuminance to CIE XYZ conversions.](https://github.com/appleseedhq/appleseed/pull/2811) 
+* [#2873 Fix compilation when spectral support is disabled.](https://github.com/appleseedhq/appleseed/pull/2873)
+* [#2870 Sun position algorithm.](https://github.com/appleseedhq/appleseed/pull/2870)
+* [#2866 Add sun disc.](https://github.com/appleseedhq/appleseed/pull/2866)
+* [#518 Add sun positioning algorithm.](https://github.com/appleseedhq/blenderseed/pull/518)
+* [#365 Add sun positioner.](https://github.com/appleseedhq/appleseed-max/pull/365)
+* [#265 Add solar positional algorithm.](https://github.com/appleseedhq/appleseed-maya/pull/235)
 
 ## GSoC work:
 
