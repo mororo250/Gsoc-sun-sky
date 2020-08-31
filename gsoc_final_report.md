@@ -20,7 +20,26 @@ During this summer my GSOC project was to improve the current Physical Sun and S
 
 Before the beginning of GSoC, I start working on the PR [#2811](https://github.com/appleseedhq/appleseed/pull/2811) to fix the spectral to cieXYZ conversions. Previously, Appleseed was using spectral reflectance to CIEXYZ method to convert emissive cases. This was given a blue/green tint every time that a spectral light was being used. Fixing the problem not only fixed the blue/green tint present on the sky models but improved the overall fidelity of Appleseed:
 
-![](final_report_assets/compare_sky.png)
+---
+layout: post
+title: Appleseed skydome Comparison
+js: /assets/js/img_comp_2.js
+css: /assets/css/img_comp_style.css
+---
+
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Appleseed_sky_old_0.jpg" width="300" height="200">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Arnold_sky_0.jpg" width="300" height="200">
+  </div>
+</div>
+
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
 
 During the community bonding period, I had to refactor most of this PR.
 
