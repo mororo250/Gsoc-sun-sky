@@ -37,7 +37,7 @@ Even though Appleseed's physical sky already had a solar radiance function imple
 
 ![](final_report_assets/Preetham_Sun.jpg)
 
-Later, I also implemented the solar radiance function presented by Hosek-Wilkie[2](https://cgg.mff.cuni.cz/projects/SkylightModelling/).
+Later, I also implemented the solar radiance function presented by Hosek-Wilkie[[2]](https://cgg.mff.cuni.cz/projects/SkylightModelling/).
 
 ##### Using Hosek Radiance Function:
 
@@ -87,7 +87,7 @@ In the current implementation, we compute the sun/sky radiance every time we eit
 
 ### 2. Adapting the model to ExoPlanets Scenes:
 
-The ability to bind multiple suns to the sky texture and ability to change the sun's blackbody radiation.[6](https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
+The ability to bind multiple suns to the sky texture and ability to change the sun's blackbody radiation.[[6]](https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
 I initially planned to implement this during this summer. Unfortunately, I didn’t have time to do it.
 
 ### 3. Implement an improved Hosek implementation:
@@ -112,12 +112,12 @@ I am very grateful to GSOC and Appleseed for the opportunity to work on a projec
 
 [1] PREETHAM A. J., SHIRLEY P., SMITS B.: A practical ana-ytic model for daylight. In Proceedings of the 26th annual conference on Computer graphics and interactive techniques(1999), ACM Press/Addison-Wesley Publishing
 
-[2] HOSEK L., WILKIE A.: An analytic model for full spectral sky-dome radiance. ACM Transactions on Graphics (TOG) 31, 4 (2012), 95((https://cgg.mff.cuni.cz/projects/SkylightModelling))
+[[2] HOSEK L., WILKIE A.: An analytic model for full spectral sky-dome radiance. ACM Transactions on Graphics (TOG) 31, 4 (2012), 95]((https://cgg.mff.cuni.cz/projects/SkylightModelling))
 
 [3] Hosek, Lukas, and Alexander Wilkie. “Adding a Solar-Radiance Function to the Hošek-Wilkie Skylight Model.” IEEE Computer Graphics and Applications 33 (2013): 44-52.
 
 [4] Lintu, Andrei et al. “Realistic Solar Disc Rendering.” WSCG (2005).
 
-[5] Serón, Francisco J. et al. “Implementation of a method of curved ray tracing for inhomogeneous atmospheres.” Comput. Graph. 29 (2005): 95-108.(https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub)
+[[5] Serón, Francisco J. et al. “Implementation of a method of curved ray tracing for inhomogeneous atmospheres.” Comput. Graph. 29 (2005): 95-108.]](https://www.sciencedirect.com/science/article/abs/pii/S0097849304001967?via%3Dihub)
 
-[6] Wilkie, Alexander & Hošek, Lukas. (2013). Predicting Sky Dome Appearance on Earth-like Extrasolar Worlds. Proceedings - SCCG 2013: 29th Spring Conference on Computer Graphics.(https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
+[[6] Wilkie, Alexander & Hošek, Lukas. (2013). Predicting Sky Dome Appearance on Earth-like Extrasolar Worlds. Proceedings - SCCG 2013: 29th Spring Conference on Computer Graphics.](https://cgg.mff.cuni.cz/projects/SkylightModelling/sccg_2013_alien_sun_preprint.pdf)
