@@ -26,8 +26,7 @@ Before the beginning of GSoC, I start working on the PR [#2811](https://github.c
 During the community bonding period, I had to refactor most of the code of this PR and fix some small bugs in its implementation.
 
 A full comparison among appleseed before and after [#2811](https://github.com/appleseedhq/appleseed/pull/2811) and Corona renderer and Arnold.
-https://mororo250.github.io/Gsoc-sun-sky/appleseed_comparison/appleseed_compare.
-
+https://mororo250.github.io/Gsoc-sun-sky/Appleseed_comparison/appleseed_compare
 
 ### appleseed Sun Disc:
 
