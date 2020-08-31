@@ -22,10 +22,10 @@ Before the beginning of GSoC, I start working on the PR [#2811](https://github.c
 
 <div class="img-comp-container">
   <div class="img-comp-img">
-    <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Appleseed_sky_old_0.jpg" width="300" height="200">
+    <img src="final_report_assets/compare_sky.png">
   </div>
   <div class="img-comp-img img-comp-overlay">
-    <img src="\Gsoc-sun-sky\assets\img\sky_color_comp\Arnold_sky_0.jpg" width="300" height="200">
+    <img src="final_report_assets/compare_sky.png">
   </div>
 </div>
 
